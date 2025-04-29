@@ -89,10 +89,10 @@ class Maze:
         for row in range(self.height):
             dots_row = []
             for col in range(self.width):
-                if self.maze_map[row][col] == 0:  # Если это проход
-                    dots_row.append(DOT_VALUE)     # Добавляем точку
+                if self.maze_map[row][col] == 0:  
+                    dots_row.append(DOT_VALUE)    
                 else:
-                    dots_row.append(0)             # Стена - без точки
+                    dots_row.append(0)             
             dots_map.append(dots_row)
         return dots_map
 
